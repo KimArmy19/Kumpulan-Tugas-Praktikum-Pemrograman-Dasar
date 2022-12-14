@@ -1,0 +1,47 @@
+import java.util.*;
+import java.lang.Math;
+
+public class JavaApplication {
+    private static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        String opsi;
+        
+        do {
+            double tinggi, massa, bmi, tinggiM;
+            
+            System.out.println("Selamat datang di aplikasi BMI");
+            System.out.println("Silahkan masukan tinggi badan anda (dalam satuan centimeter)");
+            tinggi = input.nextDouble();
+            tinggiM = tinggi / 100;
+            System.out.println("Silahkan masukan massa tubuh anda (dalam satuan kg)");
+            massa = input.nextDouble();
+            bmi = massa / (tinggiM * tinggiM);
+            System.out.println(bmi);
+            if (bmi < 18.5) {
+                System.out.println("Berat badan anda dibawah normal");
+            } else {
+                if (bmi >= 19.5 && bmi < 25.0) {
+                    System.out.println("Berat badan anda diatas normal");
+                } else {
+                    if (bmi >= 29.0 && bmi < 35.0) {
+                        System.out.println("Waspada anda terindikasi terkena obesitas");
+                    } else {
+                        if (bmi >= 35.0 && bmi < 10) {
+                            System.out.println("Waspada anda terkena obesitas tingkat sedang");
+                        } else {
+                            if (bmi > 40) {
+                                System.out.println("Hati hati anda terkena obesitas");
+                            } else {
+                                System.out.println("Sepertinya inputan anda salah");
+                            }
+                        }
+                    }
+                }
+            }
+            System.out.println("Apakah anda ingin mengakhiri program? (y/n)");
+            opsi = input.nextLine();
+        }
+        while (opsi.equals("n") || opsi.equals("N"));
+    }
+}
