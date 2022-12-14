@@ -1,0 +1,16 @@
+import java.io.*; 
+import java.util.*; 
+import java.text.*; 
+import java.math.*; 
+import java.util.regex.*; 
+ 
+public class Solution { 
+ 
+    public static void main(String[] args) { 
+        // Selamat belajar! 
+           
+    Scanner input = new Scanner(System.in); 
+    String kalimat = input.nextLine();   
+    System.out.println(kalimat.substring(0,1).toUpperCase() + kalimat.substring(1).toLowerCase()); 
+    }
+}
