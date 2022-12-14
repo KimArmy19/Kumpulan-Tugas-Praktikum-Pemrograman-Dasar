@@ -1,0 +1,15 @@
+import java.util.*;
+import java.lang.Math;
+
+public class Solution {
+    public static void main(String[] args) {
+        double gajipokok;
+        double insentif;
+        double totalgaji;
+        
+        gajipokok = 2500000;
+        insentif = 1000000;
+        totalgaji = gajipokok + insentif * ((double) 15 / 100) - 100000;
+        System.out.println(totalgaji);
+    }
+}
