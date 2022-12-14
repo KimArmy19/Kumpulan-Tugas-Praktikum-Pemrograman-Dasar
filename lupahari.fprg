@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ANDY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-07 06:26:36 PM"/>
+        <attribute name="created" value="QU5EWTtERVNLVE9QLU45RktGMjc7MjAyMi0xMC0wNzswNjoxNDo0MSBQTTsyNjEy"/>
+        <attribute name="edited" value="QU5EWTtERVNLVE9QLU45RktGMjc7MjAyMi0xMC0wNzswNjoyNjozNiBQTTsxOzI3Mjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <assign variable="z" expression="x+y"/>
+            <while expression="z&gt;7">
+                <assign variable="z" expression="z-7"/>
+            </while>
+            <if expression="x=1">
+                <then>
+                    <output expression="&quot;Senin&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x=2">
+                        <then>
+                            <output expression="&quot;Selasa&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="x=3">
+                                <then>
+                                    <output expression="&quot;Rabu&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="x=4">
+                                        <then>
+                                            <output expression="&quot;Kamis&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="x=5">
+                                                <then>
+                                                    <output expression="&quot;Jum'at&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="x=6">
+                                                        <then>
+                                                            <output expression="&quot;Sabtu&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Minggu&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="z=1">
+                <then>
+                    <output expression="&quot;Senin&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="z=2">
+                        <then>
+                            <output expression="&quot;Selasa&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="x=3">
+                                <then>
+                                    <output expression="&quot;Rabu&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="z=4">
+                                        <then>
+                                            <output expression="&quot;Kamis&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="z=5">
+                                                <then>
+                                                    <output expression="&quot;Jum'at&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="z=6">
+                                                        <then>
+                                                            <output expression="&quot;Sabtu&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Minggu&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-12 06:13:29 AM"/>
+        <attribute name="created" value="VXNlcjtXSU5ET1dTLUExN0pEMDU7MjAyMi0xMC0wNjswNDo0NTo1NSBQTTsyNzA3"/>
+        <attribute name="edited" value="VXNlcjtXSU5ET1dTLUExN0pEMDU7MjAyMi0xMC0wNjswOTo1Mzo1NCBQTTsxOzI4MTg="/>
+        <attribute name="edited" value="Rml0cmk7V0lORE9XUy1BMTdKRDA1OzIwMjItMTAtMTI7MDY6MTM6MjkgQU07MTsyODkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <assign variable="y" expression="x mod 10"/>
+            <if expression="y=0">
+                <then>
+                    <output expression="&quot;kotak permen&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="y" expression="x mod 5"/>
+                    <if expression="y=0">
+                        <then>
+                            <output expression="&quot;permen&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="y" expression="x mod 2"/>
+                            <if expression="y=0">
+                                <then>
+                                    <output expression="&quot;kotak&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="x" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

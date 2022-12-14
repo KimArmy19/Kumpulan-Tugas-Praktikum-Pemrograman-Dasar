@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-06 07:18:17 AM"/>
+        <attribute name="created" value="VXNlcjtXSU5ET1dTLUExN0pEMDU7MjAyMi0xMC0wNjswNjoyNTo1NyBBTTsyNjk0"/>
+        <attribute name="edited" value="VXNlcjtXSU5ET1dTLUExN0pEMDU7MjAyMi0xMC0wNjswNzoxODoxNyBBTTsxOzI4MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opsi" type="String" array="False" size=""/>
+            <do expression="opsi==&quot;n&quot;||opsi==&quot;N&quot;">
+                <declare name="tinggi, massa, bmi, TinggiM" type="Real" array="False" size=""/>
+                <output expression="&quot;Selamat datang di aplikasi BMI&quot;" newline="True"/>
+                <output expression="&quot;Silahkan masukan tinggi badan anda (dalam satuan centimeter)&quot;" newline="True"/>
+                <input variable="tinggi"/>
+                <assign variable="TinggiM" expression="tinggi/100"/>
+                <output expression="&quot;Silahkan masukan massa tubuh anda (dalam satuan kg)&quot;" newline="True"/>
+                <input variable="massa"/>
+                <assign variable="bmi" expression="massa/(tinggiM*tinggiM)"/>
+                <output expression="bmi" newline="True"/>
+                <if expression="bmi&lt;18.5">
+                    <then>
+                        <output expression="&quot;Berat badan anda dibawah normal&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="bmi&gt;=19.5 and bmi&lt;25.0">
+                            <then>
+                                <output expression="&quot;Berat badan anda diatas normal&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="bmi&gt;=29.0 and bmi&lt;35.0">
+                                    <then>
+                                        <output expression="&quot;Waspada anda terindikasi terkena obesitas&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="bmi&gt;=35.0 and bmi&lt;10">
+                                            <then>
+                                                <output expression="&quot;Waspada anda terkena obesitas tingkat sedang&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <if expression="bmi&gt;40">
+                                                    <then>
+                                                        <output expression="&quot;Hati hati anda terkena obesitas&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <output expression="&quot;Sepertinya inputan anda salah&quot;" newline="True"/>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Apakah anda ingin mengakhiri program? (y/n)&quot;" newline="True"/>
+                <input variable="opsi"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
