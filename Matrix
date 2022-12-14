@@ -1,0 +1,50 @@
+import java.io.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+import java.util.*;
+public class matrix {
+
+    public static void main(String[] args){
+        System.out.println("⩥Aplikasi Pembentuk Matrix⩤");
+        System.out.println();
+        System.out.println("Safitri Rahayu Kurnia Putri");
+        System.out.println("NIM.225150607111007");
+        System.out.println("〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰");
+        System.out.println();
+        
+        int b, k;
+        Scanner masuk = new Scanner(System.in);
+
+        System.out.print("Masukan Jumlah Baris : ");
+        b = masuk.nextInt();
+        System.out.print("Masukan Jumlah Kolom : ");
+        k = masuk.nextInt();
+        Integer[][] array = new Integer[b][k];
+
+        for (int i = 0; i < b; i++) {
+            for (int j = 0; j < k; j++) {
+                System.out.print("Masukkan isi baris ke " + (i+1) + " kolom ke "+ (j+1) +": ");
+                array[i][j] = masuk.nextInt();
+            }
+        }
+        System.out.println();
+        System.out.println("Berikut adalah isi matrix yang telah dimasukkan:");
+        System.out.println("------------------------------------------------");
+        for (int i = 0; i < b; i++) {
+            for (int j = 0; j < k; j++) {
+                System.out.println("Isi baris ke " + (i+1) + " kolom ke "+ (j+1) +" adalah : " + array[i][j]);
+            }
+        }
+        System.out.println();
+        System.out.println("Matrix yang terbentuk :");
+        System.out.println("-----------------------");
+        for (int i = 0; i < b; i++) {
+            for (int j = 0; j < k; j++) {
+                System.out.print(array[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
